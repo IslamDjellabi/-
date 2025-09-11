@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+        font-family: "Cairo", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #cfcfcfbe; /* Replace with your image URL */
+      background-size: cover;   /* Makes it cover the whole page */
+      background-position: center; /* Keeps it centered */
+      background-repeat: no-repeat; /* Prevents tiling */
+    }
+    
+    header {
+      background: #0a3d62;
+      color: rgb(255, 255, 255);
+      padding: 1rem;
+      text-align: center;
+      z-index: 3;
+    }
+
+    header .logo1 {
+      width: 129px;
+      right: 33px;
+      top: 10px;
+      position: absolute;
+    }
+
+    header .logo2 {
+      width: 129px;
+      left: 33px;
+      top: 10px;
+      position: absolute;
+    }
+
+    
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      word-spacing: 5px;
+    }
+    header h2 {
+      margin: 0.2rem 0 0;
+      font-size: 1.6rem;
+      font-weight: bold;
+       word-spacing: 5px;
+    }
+
+    header h3{
+      margin: 0.1rem 0 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+       word-spacing: 1px;
+    }
+    nav {
+      background: #3c6382;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      z-index: 424;
+      position: relative;
+    }
+
+     nav ul {
+      display: flex;
+      list-style-type: none;
+     }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-left: 20px;
+      display: block;
+    }
+    nav a:hover {
+      background: #00980dbe;
+    }
+
+    .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100vh;
+  background-color:rgba(102, 134, 140, 0.173);
+  backdrop-filter: blur(22px);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.07);
+  z-index: 9999;
+  padding: 24px 16px;
+  overflow-y: auto;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+   opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.sidebar.open {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0);
+  margin-top: 0%;
+}
+
+ nav .fa-solid {
+  font-size: 30px;
+ }
+
+ nav .fa-bars {
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+  right: 2px;
+ }
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+
+.sidebar a {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.sidebar a:hover {
+  background: #00980dbe;
+  color: #fff;
+}
+
+    main {
+      flex: 3;                /* 75% width */
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+      
+    }
+     main h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-align: center;
+        margin-right: 400px;
+    }
+    main p {
+        margin-bottom: 10px;
+    text-align: justify;
+    font-size: 21px;
+    line-height: 1.6;
+    position: relative;
+    margin-right: 370px;
+    top: 441px;
+}
+
+    .home-img img {
+          width: 870px;
+    height: 380px;
+    position: relative;
+    right: 380px;
+    top: -185px;
+    box-shadow: 1px 1px 10px  black;
+    }
+   
+
+     main .fill a {
+      position: absolute;
+      font-size: larger;
+      font-weight: bolder;
+      text-decoration: none;
+      border: 2px solid #0a3d62;
+      border-radius: 20px;
+      padding: 5px 10px;
+      background-color: #0a3d62;
+      color: #fff;
+      top: 389px;
+    right: 80px;
+    transition: all 0.4s ease;
+     }
+
+       main .fill a:hover {
+        background-color: #062338;
+        box-shadow: 0px 0px 5px  #062338 ;
+       }
+
+     main .fill img {
+     width: 351px;
+    height: 167px;
+    position: absolute;
+    top: 218px;
+    right: 85px;
+     }
+
+     main .fill-2 a  {
+      position: absolute;
+      font-size: larger;
+      font-weight: bolder;
+      text-decoration: none;
+      border: 2px solid #0a3d62;
+      border-radius: 20px;
+      padding: 5px 10px;
+      background-color: #0a3d62;
+      color: #fff;
+      top: 665px;
+    right: 79px;
+    transition: all 0.4s ease;
+     }
+
+        main .fill-2 a:hover {
+        background-color: #062338;
+        box-shadow: 0px 0px 5px  #062338 ;
+       }
+
+     main .fill-2 img {
+      width: 347px;
+    height: 160px;
+    position: absolute;
+    top: 500px;
+    right: 85px;
+     }
+
+     main .fill-3 a {
+      position: absolute;
+      font-size: larger;
+      font-weight: bolder;
+      text-decoration: none;
+      border: 2px solid #0a3d62;
+      border-radius: 20px;
+      padding: 5px 10px;
+      background-color: #0a3d62;
+      color: #fff;
+      top: 947px;
+    right: 79px;
+    transition: all 0.4s ease;
+     }
+
+        main .fill-3 a:hover {
+        background-color: #062338;
+        box-shadow: 0px 0px 5px  #062338 ;
+       }
+
+     main .fill-3 img {
+      width: 348px;
+    height: 170px;
+    position: absolute;
+    top: 772px;
+    right: 85px;
+     }
+
+     main .fill-4 a {
+      position: absolute;
+      font-size: larger;
+      font-weight: bolder;
+      text-decoration: none;
+      border: 2px solid #0a3d62;
+      border-radius: 20px;
+      padding: 10px 10px;
+      background-color: #0a3d62;
+      color: #fff;
+      top: 1210px;
+    right: 77px;
+    transition: all 0.4s ease;
+     }
+
+       main .fill-4 a:hover {
+        background-color: #062338;
+        box-shadow: 0px 0px 5px  #062338 ;
+       }
+
+     main .fill-4 img {
+       width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 1055px;
+    right: 85px;
+     }
+
+     main .fill-5 a {
+      position: absolute;
+      font-size: larger;
+      font-weight: bolder;
+      text-decoration: none;
+      border: 2px solid #0a3d62;
+      border-radius: 20px;
+      padding: 10px 10px;
+      background-color: #0a3d62;
+      color: #fff;
+      top: 1496px;
+    right: 77px;
+    transition: all 0.4s ease;
+     }
+
+        main .fill-5 a:hover {
+        background-color: #062338;
+        box-shadow: 0px 0px 5px  #062338 ;
+       }
+
+     main .fill-5 img {
+       width: 350px;
+    height: 160px;
+    position: absolute;
+    top: 1330px;
+    right: 80px;
+     }
+
+
+    footer {
+   font-size: 15px;
+    padding: 5px;
+    margin-top: 35rem ;
+    max-width: 100%;
+    background: #0a3d62;
+    color: #fff;
+    text-align: center;
+    position: static;
+    }
+
+    footer p {
+      margin: 5px 0;
+      word-spacing: 2px;
+    }
+    
+    .vertical-line {
+    width: 2px;
+    height: 1577px;
+    background: #000;
+    z-index: -1;
+    right: 428px;
+    top: 253px;
+    position: absolute;
+}
+
+  .carousel {
+  position: relative;
+  width: 900px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: auto;
+    margin-right: 360px;
+  top: 100px;
+
+}
+
+.carousel-track {
+  display: flex;
+  flex-direction: row;   /* Force left-to-right layout */
+  direction: ltr;        /* Ignore page RTL */
+  transition: transform 1.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;           
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-dots button {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+
+.carousel-dots .active {
+  background: #fff;
+}
+
+
+
+
+
+
+
+        /* ---------------------------------- Tablet --------------------------- */
+
+@media (max-width: 768px) {
+.hideOnMobile{
+  display: none;
+}
+
+    }
+
+
+
+
+
+
+
+ /* ---------------------------------- Phone --------------------------- */
+
+@media (max-width: 528px) {
+  body {
+    padding: 0 0px;
+    font-size: 16px;
+    background-size: cover;
+  }
+
+  header {
+    padding: 0.5rem;
+    font-size: 2rem;
+    position: relative;
+  }
+
+  header .logo1,
+  header .logo2 {
+    width: 50px;
+    top: 6px;
+    position: absolute;
+  }
+  header .logo1 { right: 10px; }
+  header .logo2 { left: 10px; }
+
+  header h1 {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    word-spacing: 2px;
+  }
+  header h2 {
+    font-size: 0.6rem;
+    margin-top: 4px;
+    word-spacing: 2px;
+  }
+  header h3 {
+    font-size: 0.6rem;
+    margin-top: 2px;
+    word-spacing: 1px;
+  }
+
+  nav {
+    padding: 0.5rem 0;
+    font-size: 0.5rem;
+    position: relative;
+  }
+  nav a {
+    font-size: 0px;
+    padding: 0rem;
+    margin-left: 0;
+    margin-bottom: 0px;
+  }
+
+  main {
+    padding: 8px;
+    max-width: 100%;
+    margin: 0;
+  }
+  main h2 {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    text-align: left;
+    margin-left: 40px;
+  }
+  main p {
+   font-size: 10px;
+        margin: 8px 0;
+        text-align: justify;
+        line-height: 1.5;
+        margin-right: 0;
+        top: 117px !important;
+        position: relative;
+        margin-right: 172px;
+        margin-left: -2px;
+        right: -29px;
+  }
+
+  .home-img img {
+   width: 100%;
+        height: 100px;
+        max-width: 220px;
+        margin: 0;
+        display: block;
+        position: static;
+        right: 137px;
+        top: -155px !important;
+        position: relative;
+  }
+
+  .carousel {
+    width: 100%;
+        max-width: 210px;
+        height: 120px;
+        margin: 16px auto;
+        top: 4px !important;
+        right: 57px;
+    }
+  
+  .carousel-track {
+    height: 100%;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .carousel-btn {
+    font-size: 8px;
+    padding: 4px;
+  }
+  .carousel-dots {
+    bottom: 2px;
+     position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+.carousel-dots button {
+    width: 7px;
+    height: 7px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.6);
+    cursor: pointer;
+    padding: 0;
+}
+
+  
+
+
+.fill a {
+    position: relative !important;
+  font-size: 6px !important;
+  padding: 2px 2px !important;
+  margin: 0px auto !important;
+  display: inline-block !important;
+  top: -421px !important;
+        right: -108px !important;
+}
+
+.fill img {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100px !important;
+  height: auto !important;
+  margin: 0 auto 8px auto !important;
+  object-fit: cover !important;
+  top: -427px !important;
+        right: 2px !important;
+}
+
+.fill-2 a {
+    position: relative !important;
+font-size: 6px !important;
+  padding: 2px 2px !important;
+  margin: 0px auto !important;
+  display: inline-block !important;
+  top: -382px !important;
+  right: -108px !important;
+}
+
+.fill-2 img {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100px !important;
+  height: auto !important;
+  margin: 0 auto 8px auto !important;
+  object-fit: cover !important;
+  top: -388px !important;
+  right: 2px!important;
+}
+
+.fill-3 a {
+    position: relative !important;
+  font-size: 6px !important;
+  padding: 2px 2px !important;
+  margin: 0px auto !important;
+  display: inline-block !important;
+  top: -472px !important;
+  right: -108px !important;
+}
+
+.fill-3 img {
+     position: relative !important;
+  width: 100% !important;
+  max-width: 100px !important;
+  height: auto !important;
+  margin: 0 auto 8px auto !important;
+  object-fit: cover !important;
+  top: -478px !important;
+  right: 2px!important;
+}
+
+.fill-4 a {
+    position: relative !important;
+  font-size: 6px !important;
+  padding: 2px 2px !important;
+  margin: 0px auto !important;
+  display: inline-block !important;
+  top: -296px !important;
+  right: -108px !important;
+}
+
+.fill-4 img {
+    position: relative !important;
+  width: 100% !important;
+  max-width: 100px !important;
+  height: auto !important;
+  margin: 0 auto 8px auto !important;
+  object-fit: cover !important;
+  top: -302px !important;
+  right:  2px!important;
+}
+
+.fill-5 a{
+    position: relative !important;
+font-size: 6px !important;
+  padding: 2px 2px !important;
+  margin: 0px auto !important;
+  display: inline-block !important;
+  top: -124px !important;
+  right:  -108px !important;
+}
+
+.fill-5 img {
+     position: relative !important;
+  width: 100% !important;
+  max-width: 100px !important;
+  height: auto !important;
+  margin: 0 auto 8px auto !important;
+  object-fit: cover !important;
+  top: -130px !important;
+  right:2px!important;
+}
+
+
+  .vertical-line {
+     display: flex;
+     right: 122px;
+     top: 144px;
+     height: 528px;
+     width: 0.8px;
+  }
+
+    footer {
+   font-size: 9px;
+        padding: 5px;
+        margin-top: -213px;
+        max-width: 100%;
+        background: #0a3d62;
+        color: #fff;
+        text-align: center;
+        position: static;
+
+  }
+  footer p {
+    word-spacing: 1px;
+    margin: 1px 0;
+  }
+
+  .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 190px;
+  height: 100vh;
+  background-color:rgba(102, 134, 140, 0.173);
+  backdrop-filter: blur(22px);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.07);
+  z-index: 9999;
+  padding: 24px 16px;
+  overflow-y: auto;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+   opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+
+
+ nav .fa-solid {
+  font-size: 20px;
+ }
+
+ nav .fa-bars {
+    font-size: 20px;
+    position: absolute;
+    top: 6px;
+    right: 13px;
+
+    
+ }
+
+.sidebar a {
+  display: block;
+  width: 100%;
+  padding: 20px 14px;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+}
