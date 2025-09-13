@@ -626,168 +626,119 @@ body {
 }
 
     .home-img img {
-          width: 870px;
-    height: 380px;
-    position: relative;
-    right: 380px;
-    top: -185px;
-    box-shadow: 1px 1px 10px  black;
+         width: 270px;
+        height: 281px;
+        position: relative;
+        right: 380px;
+        top: -380px;
+        box-shadow: 1px 1px 10px black;
     }
    
 
-      a.fill {
-      position: absolute;
-      font-size: 19px;
-      font-weight: bolder;
-      text-decoration: none;
-      border: 2px solid #0a3d62;
-      border-radius: 20px;
-      padding: 5px 10px;
-      background-color: #0a3d62;
-      color: #fff;
-      top: 420px;
-    right: 10px;
-    transition: all 0.4s ease;
-     }
+      a.fill  {
+   position: relative !important;
+        font-size: 5px;
+        padding: 2px 2px !important;
+        margin: 0px auto !important;
+        display: inline-block !important;
+        top: -415px !important;
+        right: -98px !important;
+}
 
-      a.fill:hover {
-        background-color: #062338;
-        box-shadow: 0px 0px 5px  #062338 ;
-       }
+ img.fill {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 90px !important;
+  height: auto !important;
 
-      img.fill {
-     width: 351px;
-    height: 167px;
-    position: absolute;
-    top: 248px;
-    right: 15px;
-     }
+  object-fit: cover !important;
+  top: -427px !important;
+        right: -3px !important;
+}
 
-      a.fill-2 {
-     position: absolute;
-    font-size: 19px;
-    font-weight: bolder;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid #0a3d62;
-    border-radius: 20px;
-    padding: 5px 10px;
-    padding-left: 56px;
-    padding-right: 56px;
-    background-color: #0a3d62;
-    color: #fff;
-    top: 695px;
-    right: 7px;
-    transition: all 0.4s ease;
-     }
+a.fill-2  {
+   position: relative !important;
+        font-size: 5px !important;
+        padding: 2px 12px !important;
+        margin: 0px auto !important;
+        display: inline-block !important;
+        top: -316px !important;
+        right: -289px !important;
+}
 
-        a.fill-2:hover {
-        background-color: #062338;
-        box-shadow: 0px 0px 5px  #062338 ;
-       }
+img.fill-2 {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 90px !important;
+  height: auto !important;
 
-    img.fill-2   {
-      width: 347px;
-    height: 160px;
-    position: absolute;
-    top: 530px;
-    right: 15px;
-     }
+  object-fit: cover !important;
+  top: -328px !important;
+        right: -195px !important;
+}
 
-     a.fill-3  {
-      position: absolute;
-    font-size: 19px;
-    font-weight: bolder;
-    text-decoration: none;
-    border: 2px solid #0a3d62;
-    border-radius: 20px;
-    text-align: center;
-    padding: 5px 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #0a3d62;
-    color: #fff;
-    top: 980px;
-    right: 10px;
-    transition: all 0.4s ease;
-     }
+a.fill-3  {
+   position: relative !important;
+        font-size: 5px !important;
+        padding: 2px 7px !important;
+        margin: 0px auto !important;
+        display: inline-block !important;
+        top: -324px !important;
+        right: -98px !important;
+}
 
-        a.fill-3:hover {
-        background-color: #062338;
-        box-shadow: 0px 0px 5px  #062338 ;
-       }
+img.fill-3  {
+     position: relative !important;
+  width: 100% !important;
+  max-width: 90px !important;
+  height: auto !important;
+ 
+  object-fit: cover !important;
+  top: -336px !important;
+        right: -3px !important;
+}
 
-     img.fill-3  {
-      width: 348px;
-    height: 170px;
-    position: absolute;
-    top: 805px;
-    right: 10px;
-     }
+a.fill-4  {
+ position: relative !important;
+        font-size: 5px !important;
+        padding: 2px 15px !important;
+        margin: 0px auto !important;
+        display: inline-block !important;
+        top: -171px !important;
+        right: -287px !important;
 
-    a.fill-4 {
-     position: absolute;
-    font-size: 19px;
-    font-weight: bolder;
-    text-decoration: none;
-    border: 2px solid #0a3d62;
-    border-radius: 20px;
-    padding: 5px 10px;
-    text-align: center;
-    padding-right: 61px;
-    padding-left: 65px;
-    background-color: #0a3d62;
-    color: #fff;
-    top: 1249px;
-    right: 9px;
-    transition: all 0.4s ease;
-     }
+}
 
-       a.fill-4:hover {
-        background-color: #062338;
-        box-shadow: 0px 0px 5px  #062338 ;
-       }
+img.fill-4 {
+    position: relative !important;
+  width: 100% !important;
+  max-width: 90px !important;
+  height: auto !important;
+ 
+  object-fit: cover !important;
+top: -183px !important;
+        right: -190px !important;
+}
 
-    img.fill-4   {
-       width: 350px;
-    height: 150px;
-    position: absolute;
-    top: 1095px;
-    right: 10px;
-     }
+a.fill-5 {
+ position: relative !important;
+        font-size: 5px !important;
+        padding: 2px 28px !important;
+        margin: 0px auto !important;
+        display: inline-block !important;
+        top: -72px !important;
+        right: -98px !important;
+}
 
-    a.fill-5 {
-    position: absolute;
-    font-size: 19px;
-    text-align: center;
-    justify-content: center;
-    font-weight: bolder;
-    text-decoration: none;
-    border: 2px solid #0a3d62;
-    border-radius: 20px;
-    padding: 5px 0px;
-    background-color: #0a3d62;
-    color: #fff;
-    top: 1532px;
-    right: 15px;
-    PADDING-RIGHT: 110px;
-    padding-left: 110px;
-    right: 10px;
-    transition: all 0.4s ease;
-     }
-
-         a.fill-5:hover {
-        background-color: #062338;
-        box-shadow: 0px 0px 5px  #062338 ;
-       }
-
-    img.fill-5  {
-       width: 350px;
-    height: 160px;
-    position: absolute;
-    top: 1368px;
-    right: 10px;
-     }
+img.fill-5  {
+    position: relative !important;
+        width: 100% !important;
+        max-width: 90px !important;
+        height: auto !important;
+        object-fit: cover !important;
+        top: -86px !important;
+        right: -3px !important;
+}
 
 
     footer {
@@ -818,8 +769,8 @@ body {
 
   .carousel {
   position: relative;
-  width: 900px;
-  height: 400px;
+  width: 300px;
+  height: 150px;
   overflow: hidden;
   border-radius: 12px;
   margin: auto;
@@ -888,6 +839,7 @@ body {
 
 
 
+
 }
 
 
@@ -902,7 +854,7 @@ body {
   .hideOnMobile{
   display: none;
 }
-  body, html {
+  body {
     padding: 0 ;
     margin: 0;
     overflow-x: hidden;
