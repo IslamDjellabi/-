@@ -33,3 +33,27 @@ document.addEventListener('fullscreenchange', () => {
     btn.textContent = 'Fullscreen';
   }
 });
+
+
+
+
+
+
+
+
+
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex';
+  setTimeout(() => {
+    sidebar.classList.add('open');
+  }, 10); // allow display to apply before transition
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.remove('open');
+  setTimeout(() => {
+    sidebar.style.display = 'none';
+  }, 800); // match the transition duration
+}
