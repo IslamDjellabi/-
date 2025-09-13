@@ -112,3 +112,19 @@ function hideSidebar() {
     sidebar.style.display = 'none';
   }, 800); // match the transition duration
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
