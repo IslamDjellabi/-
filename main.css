@@ -5,6 +5,10 @@ body {
   font-family: "Cairo", sans-serif;
   direction: rtl;
   background: #f4f6f9;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
 }
 
  header {
@@ -93,6 +97,7 @@ body {
 .side-item {
   overflow: hidden;
   text-align: center;
+  margin-top: 10px;
 }
 .side-item img {
   width: 100%;
@@ -250,19 +255,38 @@ body {
 }
 
  footer {
-   font-size: 15px;
     padding: 3px;
     max-width: 100%;
     background: #0a3d62;
     color: #fff;
     text-align: center;
-    position: static;
     }
 
     footer p {
+      font-size: 15px;
       margin: 0px 0;
       word-spacing: 2px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -282,14 +306,14 @@ body {
 .content {
   background: white;
   padding: 10px;
-  width: 500px;
+  width: 106.7%;
   order: 2;
   border-right: #000000 3px solid;
 }
 
 .content img {
-  width: 200px;
-  height: 100px;
+  width: 270px;
+  height: 130px;
   box-shadow: 1px 1px 10px black;
   margin: 0 auto;
   display: block;
@@ -297,8 +321,8 @@ body {
 
   .carousel {
   position: relative;
-  width: 300px;
-  height: 100px;
+  width: 280px;
+  height: 140px;
   overflow: hidden;
   border-radius: 12px;
   margin: 0 auto;
@@ -313,29 +337,29 @@ body {
   border: none;
   padding: 10px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 6px;
   border-radius: 50%;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev { left: 5px; }
+.next { right: 5px; }
 
 /* Dots */
 .carousel-dots {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
 }
 
 .carousel-dots button {
-  width: 12px;
-  height: 12px;
-  margin: 0 4px;
-  border: none;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.6);
-  cursor: pointer;
+  width: 7px;
+    height: 7px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.6);
+    cursor: pointer;
+    padding: 0;
 }
 
 .sidebar {
@@ -395,6 +419,7 @@ header {
       background: #0a3d62;
       color: rgb(255, 255, 255);
       padding: 1rem;
+      width: 136.3%;
       text-align: center;
       z-index: 3;
     }
@@ -427,6 +452,42 @@ header {
       font-size: .6rem;
       font-weight: bold;
        word-spacing: 1px;
+    }
+
+    .content h2 {
+  font-size: 22px;
+   margin-top: -4px;
+  font-weight: 700;
+  text-align: center;
+}
+
+   .content p {
+  text-align: justify;
+  margin: 20px 14px 20px 12px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  word-spacing: -1px;
+}
+
+.content span {
+    text-decoration: underline;
+    color: blue;
+}
+
+footer {
+    padding: 3px 1px;
+    width: 100%;
+    background: #0a3d62;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
+
+    footer p {
+      margin: 0px 0;
+      word-spacing: 2px;
     }
 
 }
