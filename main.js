@@ -93,7 +93,7 @@ window.addEventListener("resize", () => {
 
 
 function showSidebar() {
-  const sidebar = document.querySelector('.sidebar');
+  const sidebar = document.querySelector('.sidebar-bar');
   sidebar.style.display = 'flex';
   setTimeout(() => {
     sidebar.classList.add('open');
@@ -101,7 +101,7 @@ function showSidebar() {
 }
 
 function hideSidebar() {
-  const sidebar = document.querySelector('.sidebar');
+  const sidebar = document.querySelector('.sidebar-bar');
   sidebar.classList.remove('open');
   setTimeout(() => {
     sidebar.style.display = 'none';

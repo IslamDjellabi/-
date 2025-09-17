@@ -30,7 +30,6 @@ html {
       color: rgb(255, 255, 255);
       padding: 1rem;
       text-align: center;
-      z-index: 3;
     }
 
     header .logo1 {
@@ -69,7 +68,10 @@ html {
   justify-content: center;
   gap: 20px;
   background: #3c6382;
-  
+}
+
+.navbar li {
+  list-style-type: none;
 }
 .navbar a {
   color: white;
@@ -268,6 +270,82 @@ html {
   background: #fff;
 }
 
+ .sidebar-bar {
+  position: fixed;
+  top: 0;                   /* يبدأ من أعلى */
+  right: 0;                 /* يجي من يمين الشاشة */
+  width: 570px;             /* عرضه 300px */
+  height: 100vh;            /* يغطي طول الشاشة */
+  background-color: rgba(102, 134, 140, 0.173);
+  backdrop-filter: blur(29px);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.07);
+  z-index: 9999;
+  padding: 24px 16px;
+  overflow-y: auto;
+  display: none;            /* يبان بالـ JS أو media query */
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(100%); /* مخفي خارج الشاشة */
+  transition: opacity 0.8s, transform 1.5s;
+}
+
+.sidebar-bar.open {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0);
+  margin-top: 0%;
+}
+
+ nav .fa-solid {
+  font-size: 30px;
+ }
+
+ nav .fa-bars {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+  right: 2px;
+ }
+
+.sidebar-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-bar li {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+
+.sidebar-bar a {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sidebar-bar a:hover {
+  background: #00980dbe;
+  color: #fff;
+}
+
+.navbar .fa-bars {
+  margin-top: 14px;
+  justify-content: right;
+}
+
+.navbar p {
+       display: none;
+}
+
  footer {
     padding: 3px;
     max-width: 100%;
@@ -304,8 +382,339 @@ html {
 
 /* Responsive */
 @media (max-width: 768px) {
-  
+   .hideOnMobile{
+  display: none;
 }
+
+.showOnMobile{
+  display: flex;
+}
+
+.content {
+  background: white;
+  padding: 10px;
+  width: 100%;
+  order: 2;
+  border-right: #000000 3px solid;
+}
+
+.content img {
+  width: 480px;
+        height: 221px;
+  box-shadow: 1px 1px 10px black;
+  margin: 0 auto;
+  display: block;
+  }
+
+  .carousel {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-dots button {
+  width: 14px;
+    height: 14px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.6);
+    cursor: pointer;
+    padding: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  order: 1;
+  margin-top: 28px;
+}
+.side-item {
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+}
+
+.side-item  .fa-solid {
+  margin-left: 2px;
+}
+.side-item img {
+  width: 90%;
+  display: block;
+}
+
+.side-item .img1 {
+  font-size: 14px;
+  float: right;
+  padding: 4px 14px;
+}
+
+.side-item .img2 {
+  font-size: 14px;
+        float: right;
+        padding: 4px 4px;
+}
+
+.side-item .img3 {
+  font-size: 14px;
+  float: right;
+  padding: 4px 6px;
+}
+
+.side-item .img4 {
+  font-size: 14px;
+  float: right;
+  padding: 4px 10px;
+}
+
+.side-item .img5 {
+  font-size: 14px;
+  float: right;
+  padding: 4px 44px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* أول عمود aside ثم المحتوى */
+  gap: 0px;
+  padding: 10px;
+}
+
+header {
+      background: #0a3d62;
+      color: rgb(255, 255, 255);
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+      z-index: 3;
+    }
+
+    header .logo1 {
+      width: 100px;
+      float: right;
+    }
+
+    header .logo2 {
+      width: 100px;
+      float: left;
+    }
+
+    
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      word-spacing: 5px;
+    }
+    header h2 {
+      margin: 0.2rem 0 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+       word-spacing: 5px;
+    }
+
+    header h3{
+      margin: 0.1rem 0 0;
+      font-size: 1rem;
+      font-weight: bold;
+       word-spacing: 1px;
+    }
+
+    .content h2 {
+  font-size: 17px;
+   margin-top: -4px;
+  font-weight: 700;
+  text-align: center;
+}
+
+   .content p {
+  text-align: justify;
+        margin: 20px 32px 20px 34px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.8;
+        word-spacing: 2px;
+}
+
+.content span {
+    text-decoration: underline;
+    color: blue;
+}
+
+.navbar {
+  display: flex;
+  justify-content: none;
+  gap: 20px;
+  background: #3c6382;
+  justify-content: right;
+}
+
+.navbar .fa-bars {
+  margin-right: 10px;
+  justify-content: right;
+  margin-top: 0px;
+}
+
+.navbar a {
+  margin: 0 -25px;
+}
+
+.navbar p {
+         font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 auto;
+        margin-left: 287px;
+        display: block;
+}
+
+.navbar a:hover {
+    background: transparent !important;
+  background-color: transparent !important;
+}
+
+.sidebar-bar {
+  position: fixed;
+  top: 0;                   /* يبدأ من أعلى */
+  right: 0;                 /* يجي من يمين الشاشة */
+  width: 400px;             /* عرضه 300px */
+  height: 100vh;            /* يغطي طول الشاشة */
+  background-color: rgba(102, 134, 140, 0.173);
+  backdrop-filter: blur(29px);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.07);
+  z-index: 9999;
+  padding: 24px 16px;
+  overflow-y: auto;
+  display: none;            /* يبان بالـ JS أو media query */
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(100%); /* مخفي خارج الشاشة */
+  transition: opacity 0.8s, transform 1.5s;
+}
+
+.sidebar-bar.open {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0);
+  margin-top: 0%;
+}
+
+ nav .fa-solid {
+  font-size: 30px;
+ }
+
+ nav .fa-bars {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+  right: 2px;
+ }
+
+.sidebar-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-bar li {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+
+.sidebar-bar a {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.sidebar-bar a:hover {
+  background: #00980dbe;
+  color: #fff;
+}
+
+
+
+
+
+footer {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    background: #0a3d62;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    }
+
+    footer {
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 528px) {
   
@@ -493,6 +902,107 @@ header {
     text-decoration: underline;
     color: blue;
 }
+
+.navbar {
+  display: flex;
+  justify-content: none;
+  gap: 20px;
+  background: #3c6382;
+  justify-content: right;
+}
+
+.navbar .fa-bars {
+  margin-right: 10px;
+  justify-content: right;
+  margin-top: 0px;
+}
+
+.navbar a {
+  margin: 0 -25px;
+}
+
+.navbar p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto;
+  margin-left: 90px;
+    display: block;
+}
+
+.navbar a:hover {
+    background: transparent !important;
+  background-color: transparent !important;
+}
+
+.sidebar-bar {
+  position: fixed;
+  top: 0;                   /* يبدأ من أعلى */
+  right: 0;                 /* يجي من يمين الشاشة */
+  width: 270px;             /* عرضه 300px */
+  height: 100vh;            /* يغطي طول الشاشة */
+  background-color: rgba(102, 134, 140, 0.173);
+  backdrop-filter: blur(29px);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.07);
+  z-index: 9999;
+  padding: 24px 16px;
+  overflow-y: auto;
+  display: none;            /* يبان بالـ JS أو media query */
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(100%); /* مخفي خارج الشاشة */
+  transition: opacity 0.8s, transform 1.5s;
+}
+
+.sidebar-bar.open {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0);
+  margin-top: 0%;
+}
+
+ nav .fa-solid {
+  font-size: 30px;
+ }
+
+ nav .fa-bars {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+  right: 2px;
+ }
+
+.sidebar-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-bar li {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+
+.sidebar-bar a {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sidebar-bar a:hover {
+  background: #00980dbe;
+  color: #fff;
+}
+
+
 
 footer {
     margin: 0;
