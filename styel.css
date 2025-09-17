@@ -1,0 +1,1013 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  background: #f4f6f9;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: auto;
+  min-height: 100%;
+   overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ header {
+      background: #0a3d62;
+      color: rgb(255, 255, 255);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header .logo1 {
+      width: 140px;
+      float: right;
+    }
+
+    header .logo2 {
+      width: 140px;
+      float: left;
+    }
+
+    
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      word-spacing: 5px;
+    }
+    header h2 {
+      margin: 0.2rem 0 0;
+      font-size: 1.6rem;
+      font-weight: bold;
+       word-spacing: 5px;
+    }
+
+    header h3{
+      margin: 0.1rem 0 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+       word-spacing: 1px;
+    }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #3c6382;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 7px 10px;
+  padding: 5px 20px;
+  transition: all 0.3s ease;
+}
+.navbar a:hover {
+  background-color: #00980dbe;
+  border-radius: 50px;
+}
+
+/* Layout */
+.page {
+  display: grid;
+  grid-template-columns: 260px 1fr; /* أول عمود aside ثم المحتوى */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* محتوى */
+.content {
+  background: white;
+  padding: 20px;
+  order: 2;
+  border-right: #000000 3px solid;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  order: 1;
+}
+.side-item {
+  overflow: hidden;
+  text-align: center;
+  margin-top: 10px;
+}
+.side-item img {
+  width: 100%;
+  display: block;
+}
+.side-item .img1 {
+  margin: 5px 0px 25px 0px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0a3d62;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.side-item .img2 {
+  margin: 5px 0px 25px 0px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0a3d62;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.side-item .img3 {
+  margin: 5px 0px 25px 0px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0a3d62;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.side-item .img4 {
+  margin: 5px 0px 25px 0px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0a3d62;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.side-item .img5 {
+  margin: 5px 0px 25px 0px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0a3d62;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.side-item .fa-solid {
+  margin-left: 5px;
+}
+
+.side-item p:hover {
+        background-color: #062338;
+        box-shadow: 0px 0px 10px  #062338 ;
+       }
+
+.content h2 {
+  font-size: 30px;
+  margin-top: 0px;
+  font-weight: 800;
+  text-align: center;
+}
+
+ .content img {
+  width: 1000px;
+  height: 420px;
+  box-shadow: 1px 1px 10px black;
+  margin: 0 auto;
+  display: block;
+  }
+
+   .content p {
+    text-align: justify;
+    margin: 30px 70px 30px 70px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    word-spacing: 1px;
+}
+
+a.link {
+    text-decoration: underline;
+    color: rgb(43, 0, 255);
+}
+
+.carousel {
+  position: relative;
+  width: 900px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  flex-direction: row;  
+  direction: ltr;       
+  transition: transform 1.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;           
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-dots button {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+
+.carousel-dots .active {
+  background: #fff;
+}
+
+ .sidebar-bar {
+  position: fixed;
+  top: 0;                   /* يبدأ من أعلى */
+  right: 0;                 /* يجي من يمين الشاشة */
+  width: 570px;             /* عرضه 300px */
+  height: 100vh;            /* يغطي طول الشاشة */
+  background-color: rgba(102, 134, 140, 0.173);
+  backdrop-filter: blur(29px);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.07);
+  z-index: 9999;
+  padding: 24px 16px;
+  overflow-y: auto;
+  display: none;            /* يبان بالـ JS أو media query */
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(100%); /* مخفي خارج الشاشة */
+  transition: opacity 0.8s, transform 1.5s;
+}
+
+.sidebar-bar.open {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0);
+  margin-top: 0%;
+}
+
+ nav .fa-solid {
+  font-size: 30px;
+ }
+
+ nav .fa-bars {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+  right: 2px;
+ }
+
+.sidebar-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-bar li {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+
+.sidebar-bar a {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sidebar-bar a:hover {
+  background: #00980dbe;
+  color: #fff;
+}
+
+.navbar .fa-bars {
+  margin-top: 14px;
+  justify-content: right;
+}
+
+.navbar p {
+       display: none;
+}
+
+ footer {
+    padding: 3px;
+    max-width: 100%;
+    background: #0a3d62;
+    color: #fff;
+    text-align: center;
+    }
+
+    footer p {
+      font-size: 15px;
+      margin: 0px 0;
+      word-spacing: 2px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+   .hideOnMobile{
+  display: none;
+}
+
+.showOnMobile{
+  display: flex;
+}
+
+.content {
+  background: white;
+  padding: 10px;
+  width: 100%;
+  order: 2;
+  border-right: #000000 3px solid;
+}
+
+.content img {
+  width: 480px;
+        height: 221px;
+  box-shadow: 1px 1px 10px black;
+  margin: 0 auto;
+  display: block;
+  }
+
+  .carousel {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-dots button {
+  width: 14px;
+    height: 14px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.6);
+    cursor: pointer;
+    padding: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  order: 1;
+  margin-top: 28px;
+}
+.side-item {
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+}
+
+.side-item  .fa-solid {
+  margin-left: 2px;
+}
+.side-item img {
+  width: 90%;
+  display: block;
+}
+
+.side-item .img1 {
+  font-size: 14px;
+  float: right;
+  padding: 4px 14px;
+}
+
+.side-item .img2 {
+  font-size: 14px;
+        float: right;
+        padding: 4px 4px;
+}
+
+.side-item .img3 {
+  font-size: 14px;
+  float: right;
+  padding: 4px 6px;
+}
+
+.side-item .img4 {
+  font-size: 14px;
+  float: right;
+  padding: 4px 10px;
+}
+
+.side-item .img5 {
+  font-size: 14px;
+  float: right;
+  padding: 4px 44px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* أول عمود aside ثم المحتوى */
+  gap: 0px;
+  padding: 10px;
+}
+
+header {
+      background: #0a3d62;
+      color: rgb(255, 255, 255);
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+      z-index: 3;
+    }
+
+    header .logo1 {
+      width: 100px;
+      float: right;
+    }
+
+    header .logo2 {
+      width: 100px;
+      float: left;
+    }
+
+    
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      word-spacing: 5px;
+    }
+    header h2 {
+      margin: 0.2rem 0 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+       word-spacing: 5px;
+    }
+
+    header h3{
+      margin: 0.1rem 0 0;
+      font-size: 1rem;
+      font-weight: bold;
+       word-spacing: 1px;
+    }
+
+    .content h2 {
+  font-size: 17px;
+   margin-top: -4px;
+  font-weight: 700;
+  text-align: center;
+}
+
+   .content p {
+  text-align: justify;
+        margin: 20px 32px 20px 34px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.8;
+        word-spacing: 2px;
+}
+
+.content span {
+    text-decoration: underline;
+    color: blue;
+}
+
+.navbar {
+  display: flex;
+  justify-content: none;
+  gap: 20px;
+  background: #3c6382;
+  justify-content: right;
+}
+
+.navbar .fa-bars {
+  margin-right: 10px;
+  justify-content: right;
+  margin-top: 0px;
+}
+
+.navbar a {
+  margin: 0 -25px;
+}
+
+.navbar p {
+         font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 auto;
+        margin-left: 287px;
+        display: block;
+}
+
+.navbar a:hover {
+    background: transparent !important;
+  background-color: transparent !important;
+}
+
+.sidebar-bar {
+  position: fixed;
+  top: 0;                   /* يبدأ من أعلى */
+  right: 0;                 /* يجي من يمين الشاشة */
+  width: 400px;             /* عرضه 300px */
+  height: 100vh;            /* يغطي طول الشاشة */
+  background-color: rgba(102, 134, 140, 0.173);
+  backdrop-filter: blur(29px);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.07);
+  z-index: 9999;
+  padding: 24px 16px;
+  overflow-y: auto;
+  display: none;            /* يبان بالـ JS أو media query */
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(100%); /* مخفي خارج الشاشة */
+  transition: opacity 0.8s, transform 1.5s;
+}
+
+.sidebar-bar.open {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0);
+  margin-top: 0%;
+}
+
+ nav .fa-solid {
+  font-size: 30px;
+ }
+
+ nav .fa-bars {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+  right: 2px;
+ }
+
+.sidebar-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-bar li {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+
+.sidebar-bar a {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.sidebar-bar a:hover {
+  background: #00980dbe;
+  color: #fff;
+}
+
+
+
+
+
+footer {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    background: #0a3d62;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    }
+
+    footer {
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 528px) {
+  
+  .hideOnMobile{
+  display: none;
+}
+
+.showOnMobile{
+  display: flex;
+}
+
+.content {
+  background: white;
+  padding: 10px;
+  width: 100%;
+  order: 2;
+  border-right: #000000 3px solid;
+}
+
+.content img {
+ width: 187px;
+  height: 88px;
+  box-shadow: 1px 1px 10px black;
+  margin: 0 auto;
+  display: block;
+  }
+
+  .carousel {
+  position: relative;
+  width: 190px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 6px;
+  border-radius: 50%;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-dots button {
+  width: 7px;
+    height: 7px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.6);
+    cursor: pointer;
+    padding: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  order: 1;
+  margin-top: 28px;
+}
+.side-item {
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+}
+
+.side-item  .fa-solid {
+  margin-left: 2px;
+}
+.side-item img {
+  width: 90%;
+  display: block;
+}
+
+.side-item .img1 {
+  font-size: 8px;
+  float: right;
+  padding: 3px 14px;
+}
+
+.side-item .img2 {
+   font-size: 8px;
+  float: right;
+  padding: 3px 8px;
+}
+
+.side-item .img3 {
+  font-size: 8px;
+  float: right;
+  padding: 3px 11px;
+}
+
+.side-item .img4 {
+  font-size: 8px;
+  float: right;
+  padding: 3px 12px;
+}
+
+.side-item .img5 {
+  font-size: 8px;
+  float: right;
+  padding: 3px 32px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 130px 1fr; /* أول عمود aside ثم المحتوى */
+  gap: 0px;
+  padding: 10px;
+}
+
+header {
+      background: #0a3d62;
+      color: rgb(255, 255, 255);
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+      z-index: 3;
+    }
+
+    header .logo1 {
+      width: 45px;
+      float: right;
+    }
+
+    header .logo2 {
+      width: 45px;
+      float: left;
+    }
+
+    
+    header h1 {
+      margin: 0;
+      font-size: 0.6rem;
+      word-spacing: 5px;
+    }
+    header h2 {
+      margin: 0.2rem 0 0;
+      font-size: .4rem;
+      font-weight: bold;
+       word-spacing: 5px;
+    }
+
+    header h3{
+      margin: 0.1rem 0 0;
+      font-size: .3rem;
+      font-weight: bold;
+       word-spacing: 1px;
+    }
+
+    .content h2 {
+  font-size: 17px;
+   margin-top: -4px;
+  font-weight: 700;
+  text-align: center;
+}
+
+   .content p {
+  text-align: justify;
+       margin: 20px 0px 20px 0px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.8;
+        word-spacing: 0px;
+}
+  
+
+.navbar {
+  display: flex;
+  justify-content: none;
+  gap: 20px;
+  background: #3c6382;
+  justify-content: right;
+}
+
+.navbar .fa-bars {
+  margin-right: 10px;
+  justify-content: right;
+  margin-top: 0px;
+}
+
+.navbar a {
+  margin: 0 -25px;
+}
+
+.navbar p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto;
+  margin-left: 77px;
+    display: block;
+}
+
+.navbar a:hover {
+    background: transparent !important;
+  background-color: transparent !important;
+}
+
+.sidebar-bar {
+  position: fixed;
+  top: 0;                   /* يبدأ من أعلى */
+  right: 0;                 /* يجي من يمين الشاشة */
+  width: 270px;             /* عرضه 300px */
+  height: 100vh;            /* يغطي طول الشاشة */
+  background-color: rgba(102, 134, 140, 0.173);
+  backdrop-filter: blur(29px);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.07);
+  z-index: 9999;
+  padding: 24px 16px;
+  overflow-y: auto;
+  display: none;            /* يبان بالـ JS أو media query */
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(100%); /* مخفي خارج الشاشة */
+  transition: opacity 0.8s, transform 1.5s;
+}
+
+.sidebar-bar.open {
+  display: flex;
+  opacity: 1;
+  transform: translateX(0);
+  margin-top: 0%;
+}
+
+ nav .fa-solid {
+  font-size: 30px;
+ }
+
+ nav .fa-bars {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+  right: 2px;
+ }
+
+.sidebar-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-bar li {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+
+.sidebar-bar a {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sidebar-bar a:hover {
+  background: #00980dbe;
+  color: #fff;
+}
+
+
+
+footer {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    background: #0a3d62;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    }
+
+    footer {
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+}

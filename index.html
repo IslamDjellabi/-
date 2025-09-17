@@ -1,60 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <Link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">  
-    <link rel="shortcut icon" href="imges/الرابطة الوطنية logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> 
+  <link rel="shortcut icon" href="imges/الرابطة الوطنية logo.png" type="image/x-icon"> 
   <title>الرابطة الوطنية للطلبة الجزائريين - المكتب التنفيذي الولائي ورقلة</title>
+  <link rel="stylesheet" href="styel.css">
 </head>
 <body>
-  
-  <header>
-    <div>
+
+   <header>
+    <div>  <img class="logo2" src="imges/جامعة ورقلة logo.png">
         <img class="logo1" src="imges/الرابطة الوطنية logo.png">
       </div>
-    <h1>الرابــطـــة الوطــنيـــة للطلبـــة الجزائـــرييــن</h1>
-    <h2>المـــكتب التـنفيـــذي الولائــــي ورقلــــة</h2>
+    <h1>الرابـــطــــة الوطـــنيـــــة للطلبـــــة الجزائـــــرييـــن</h1>
+    <h2>المـــــكتب التـنفيـــــذي الولائــــــي ورقلــــــة</h2>
     <h3>National Association of Algerian Students – Ouargla Office</h3>
      <div>
-        <img class="logo2" src="imges/جامعة ورقلة logo.png">
       </div>
   </header>
-
-  <nav>
-    <ul>
+  
+  <!-- شريط علوي (Navbar) -->
+  <nav class="navbar">
     <li onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-    <a class="hideOnMobile" href="index.html">الصفحة الرئسية </a>
-    <a class="hideOnMobile" href="about.html">تعرف علينا</a>
+    <a class="hideOnMobile" href="index.html">الصفحة الرئسية</a>
+    <a class="hideOnMobile" href="about.css" target="_blank">تعرف علينا</a>
     <a class="hideOnMobile" href="map.html" target="_blank">خريطة المدينة الجامعية ورقلة</a>
-    <a class="hideOnMobile" href="main.html">" قــريبــــا  "</a>
+    <a class="hideOnMobile" href="#">" قــريبــــا  "</a>
     <a class="hideOnMobile" href="contact.html" target="_blank">تواصل معنا</a>
-      </ul>
-       <ul class="sidebar">
-    <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
-    <a href="index.html">الصفحة الرئسية </a>
-    <a href="main.html">تعرفعلينا</a>
-    <a href="map.html" target="_blank">خريطةالمدينةالجامعيةورقلة</a>
-    <a href="main.html" target="_blank">" قــريبــــا  "</a>
-    <a href="contact.html" target="_blank">تواصلمعنا</a>
-      </ul>
+    <p class="showOnMobile">علــم – وحــدة – تــضحيـة</p>
   </nav>
+   <nav class="sidebar-bar">
+     <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+    <a class="" href="index.html">الصفحة الرئسية</a>
+    <a class="" href="about.css" target="_blank">تعرف علينا</a>
+    <a class="" href="map.html" target="_blank">خريطة المدينة الجامعية ورقلة</a>
+    <a class="" href="#">" قــريبــــا  "</a>
+    <a class="" href="contact.html" target="_blank">تواصل معنا</a>
+  </nav>
+  
+  <!-- تخطيط الصفحة -->
+  <div class="page">
+    <!-- محتوى رئيسي -->
+    <main class="content">
+      <h2>الرابـــطة ترحــــب بكــــم</h2>
+      <img src="imges/Untitled (820 x 360 px) (2048 x 1080 px) (2).png" >
+      <p>
+          مرحبًا بكم في الموقع الرسمي للرابطة الوطنية للطلبة الجزائريين – المكتب التنفيذي الولائي  ورقلة ، صوتكم في الجامعة ورفيقكم منذ أول يوم.
+         منذ 1988 والرابطة واقفة مع الطالب: تدافع على حقوقه، تفتح له فضاءات للنشاط  والتكوين، وترافقه خطوة بخطوة  في مساره الجامعي  والاجتماعي.
+         هنا تبدأ رحلتك الطلابية معنا… من الانخراط في الأنشطة، إلى صناعة الوعي والقيادة، وحتى يوم التخرج.
+         شعارنا دائمًا: علم – وحدة – تضحية 
+          <a class="link" href="about.html">تعرف علينا أكثر</a>.
+      </p>
 
-  <main> 
-    <h2>الرابـــطة ترحــــب بكــــم</h2>
-    <p>
-     مرحبًا بكم في الموقع الرسمي للرابطة الوطنية للطلبة الجزائريين – المكتب التنفيذي الولائي  ورقلة ، صوتكم في الجامعة ورفيقكم منذ أول يوم.
-منذ 1988 والرابطة واقفة مع الطالب: تدافع على حقوقه، تفتح له فضاءات للنشاط  والتكوين، وترافقه خطوة بخطوة  في مساره الجامعي  والاجتماعي.
- هنا تبدأ رحلتك الطلابية معنا… من الانخراط في الأنشطة، إلى صناعة الوعي والقيادة، وحتى يوم التخرج.
-شعارنا دائمًا: علم – وحدة – تضحية ✊
-🔗 تعرف علينا أكثر
-    </p>
-          <div class="home-img">
-            <img src="imges/Untitled (820 x 360 px) (2048 x 1080 px) (2).png" >
-          </div>
-
-   <div class="carousel">
+       <div class="carousel">
   <div class="carousel-track">
     <div class="slide"><img src="imges/home img.png" alt="Slide 1"></div>
     <div class="slide"><img src="imges/home img.png" alt="Slide 2"></div>
@@ -70,41 +70,38 @@
   <div class="carousel-dots"></div>
 </div>
 
-<div class="vertical-line"></div>
-  
+    </main>
 
-    <img class="fill" src="imges/1.png">
-    <a  class="fill" href="https://forms.gle/qTMjkGYwbgQUM4Um7" target="_blank"> <i class="fa-solid fa-graduation-cap"></i> السجلالرقميلتلقيشكاويالطلبة</a>
-  
+    <!-- الشريط الجانبي -->
+    <aside class="sidebar">
+      <div class="side-item">
+        <img src="imges/1.png" alt="صورة 1">
+        <a href="https://forms.gle/qTMjkGYwbgQUM4Um7" target="_blank"><p  class="img1"> <i class="fa-solid fa-graduation-cap"></i>السجل الرقمي لتلقي  <br class="showOnMobile"> شكاوي الطلبة</p></a>
+      </div>
+      <div class="side-item">
+        <img src="imges/2.png" alt="صورة 2">
+        <p  class="img2"><i class="fa-solid fa-graduation-cap"></i>استمارة الانخراط بالرابطة</p>
+      </div>
+      <div class="side-item">
+        <img src="imges/3.png" alt="صورة 3">
+        <p  class="img3"> <i class="fa-solid fa-graduation-cap"></i>خريطة المدينة الجامعية <br class="showOnMobile"> ورقلة</p>
+      </div>
+      <div class="side-item">
+        <img src="imges/4.png" alt="صورة 4">
+        <p  class="img4"> <i class="fa-solid fa-graduation-cap"></i>إعرف حقوقك وواجباتك</p>
+      </div>
+      <div class="side-item">
+        <img src="imges/5.png" alt="صورة 5">
+        <p  class="img5" ><i class="fa-solid fa-graduation-cap"></i>تواصل معنا </p>
+      </div>
+    </aside>
+  </div>
 
-  
-
-    <img  class="fill-2" src="imges/2.png">
-    <a  class="fill-2" href="https://forms.gle/qTMjkGYwbgQUM4Um7" target="_blank"> <i class="fa-solid fa-graduation-cap"></i> استمارةالانخراطبالرابطة</a>
-  
-
-
-    
-    <img class="fill-5" src="imges/3.png">
-    <a class="fill-5" href="https://forms.gle/qTMjkGYwbgQUM4Um7" target="_blank"> <i class="fa-solid fa-graduation-cap"></i> تواصلمعنا </a>
-
-
-
-    <img class="fill-4" src="imges/4.png">
-    <a class="fill-4" href="https://forms.gle/qTMjkGYwbgQUM4Um7" target="_blank"> <i class="fa-solid fa-graduation-cap"></i>  إعرفحقوقكوواجباتك</a>
-
-
-
-  
-    <img class="fill-3" src="imges/5.png">
-    <a  class="fill-3" href="https://forms.gle/qTMjkGYwbgQUM4Um7" target="_blank"> <i class="fa-solid fa-graduation-cap"></i>  خريطةالمدينةالجامعيةورقلة</a>
-
-  </main>
-
-  <footer>
+   <footer>
     <p>الرابطة الوطنية للطلبة الجزائريين - المكتب الولائي ورقلة جميع حقوق النشر محفوظة © 2025</p>
   </footer>
-       
-   <script src="Script.js"></script>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
