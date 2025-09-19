@@ -751,6 +751,42 @@ footer {
       font-weight: 600;
     }
 
+    .social-list li .fa-facebook {
+  margin-left:60px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.social-list li .fa-instagram {
+  margin-left:60px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.social-list li .fa-whatsapp {
+  margin-left:50px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.social-list li .fa-tiktok {
+  margin-left:70px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.social-list li .fa-globe {
+  margin-left:30px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.social-list li .fa-envelope {
+  margin-left:50px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.social-list li .fa-telegram {
+  margin-left:90px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
 }
 
 
@@ -998,5 +1034,41 @@ footer {
       font-size: 9px;
       font-weight: 500;
     }
+
+    .social-list li .fa-facebook {
+  margin-left:20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.social-list li .fa-instagram {
+  margin-left:20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.social-list li .fa-whatsapp {
+  margin-left:10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.social-list li .fa-tiktok {
+  margin-left:20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.social-list li .fa-globe {
+  margin-left:5px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.social-list li .fa-envelope {
+  margin-left:10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.social-list li .fa-telegram {
+  margin-left:35px;
+  font-size: 20px;
+  color: #ffffff;
+}
 
 }
