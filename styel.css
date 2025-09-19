@@ -290,7 +290,7 @@ a.link {
   flex-direction: column;
   align-items: flex-start;
   transform: translateX(100%); /* مخفي خارج الشاشة */
-  transition: opacity 0.8s, transform 1.5s;
+  transition: opacity 0.8s, transform  0.8s;
 }
 
 .sidebar-bar.open {
@@ -610,7 +610,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   transform: translateX(100%); /* مخفي خارج الشاشة */
-  transition: opacity 0.8s, transform 1.5s;
+  transition: opacity 0.8s, transform  0.8s;
 }
 
 .sidebar-bar.open {
@@ -730,8 +730,8 @@ footer {
 }
 
 .content img {
- width: 187px;
-  height: 88px;
+ width: 210px;
+  height: 100px;
   box-shadow: 1px 1px 10px black;
   margin: 0 auto;
   display: block;
@@ -739,8 +739,8 @@ footer {
 
   .carousel {
   position: relative;
-  width: 190px;
-  height: 80px;
+  width: 200px;
+  height: 100px;
   overflow: hidden;
   border-radius: 12px;
   margin: 0 auto;
@@ -848,12 +848,12 @@ header {
     }
 
     header .logo1 {
-      width: 45px;
+      width: 60px;
       float: right;
     }
 
     header .logo2 {
-      width: 45px;
+      width: 60px;
       float: left;
     }
 
@@ -861,18 +861,18 @@ header {
     header h1 {
       margin: 0;
       font-size: 0.6rem;
-      word-spacing: 5px;
+      word-spacing: 2px;
     }
     header h2 {
       margin: 0.2rem 0 0;
-      font-size: .4rem;
+      font-size: .6rem;
       font-weight: bold;
-       word-spacing: 5px;
+       word-spacing: 2px;
     }
 
     header h3{
       margin: 0.1rem 0 0;
-      font-size: .3rem;
+      font-size: .5rem;
       font-weight: bold;
        word-spacing: 1px;
     }
@@ -885,12 +885,12 @@ header {
 }
 
    .content p {
-  text-align: justify;
-       margin: 20px 0px 20px 0px;
-        font-size: 14px;
+ text-align: justify;
+        margin: 20px 0px 20px 0px;
+        font-size: 12px;
         font-weight: 600;
-        line-height: 1.8;
-        word-spacing: 0px;
+        line-height: 1.9;
+        word-spacing: 1px;
 }
   
 
@@ -942,7 +942,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   transform: translateX(100%); /* مخفي خارج الشاشة */
-  transition: opacity 0.8s, transform 1.5s;
+  transition: opacity 0.8s, transform  0.8s;
 }
 
 .sidebar-bar.open {
@@ -1005,9 +1005,9 @@ footer {
     box-sizing: border-box;
     }
 
-    footer {
-      font-size: 10px;
-      font-weight: 600;
+    footer p {
+      font-size: 9px;
+      font-weight: 500;
     }
 
 }

@@ -1,61 +1,81 @@
-<!DOCTYPE html>
-<html lang="ar"  dir="rtl">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <Link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="shortcut icon" href="imges/الرابطة الوطنية logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> 
+  <link rel="shortcut icon" href="imges/الرابطة الوطنية logo.png" type="image/x-icon"> 
   <title>تواصل معنا</title>
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
-  <header>
-    <div>
-        <img class="logo1" src="imges/الرابطة الوطنية logo.png" alt="Student Organization Logo">
+   <header>
+    <div>  <img class="logo2" src="imges/جامعة ورقلة logo.png">
+        <img class="logo1" src="imges/الرابطة الوطنية logo.png">
       </div>
-    <h1>الرابــطـــة الوطــنيـــة للطلبـــة الجزائـــرييــن</h1>
-    <h2>المـــكتب التـنفيـــذي الولائــــي ورقلــــة</h2>
+    <h1>الرابـــطــــة الوطـــنيـــــة للطلبـــــة الجزائـــــرييـــن</h1>
+    <h2>المـــــكتب التـنفيـــــذي الولائــــــي ورقلــــــة</h2>
     <h3>National Association of Algerian Students – Ouargla Office</h3>
      <div>
-        <img class="logo2" src="imges/جامعة ورقلة logo.png" alt="Student Organization Logo">
       </div>
   </header>
-
-  <nav>
-   <a href="#home" target="_blank">الصفحة الرئسية </a>
-    <a href="about.html">تعرف علينا</a>
-    <a href="map.html" target="_blank">خريطة المدينة الجامعية ورقلة</a>
-    <a>" قــريبــــا  "</a>
-    <a href="contact.html">تواصل معنا</a>
+  
+  <!-- شريط علوي (Navbar) -->
+  <nav class="navbar">
+    <li onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    <a class="hideOnMobile" href="index.html">الصفحة الرئسية</a>
+    <a class="hideOnMobile" href="about.html" target="_blank">تعرف علينا</a>
+    <a class="hideOnMobile" href="map.html" target="_blank">خريطة المدينة الجامعية ورقلة</a>
+    <a class="hideOnMobile" href="#">" قــريبــــا  "</a>
+    <a class="hideOnMobile" href="contact.html" target="_blank">تواصل معنا</a>
+  
+  </nav>
+   <nav class="sidebar-bar">
+     <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+    <a class="" href="index.html">الصفحة الرئسية</a>
+    <a class="" href="about.html" target="_blank">تعرف علينا</a>
+    <a class="" href="map.html" target="_blank">خريطة المدينة الجامعية ورقلة</a>
+    <a class="" href="#">" قــريبــــا  "</a>
+    <a class="" href="contact.html" target="_blank">تواصل معنا</a>
   </nav>
 
-  <main>
-   
-    <div class="row">
-        <img src="imges/contact.png" alt="">
-        <form action="https://formsubmit.co/islam59k@gmail.com" method="POST">
-          <input type="text" name="اسم المرسل" id="اسم المرسل" placeholder="اسم المرسل" required>
-          <input type="email" name="Email" id="Email" placeholder="البريد الالكتوني للمرسل" required>
-          <textarea name="Message" id="Message" cols="30" rows="10" placeholder="الرسالة"></textarea>
-          <button type="submit">ارسال</button>
-        </form>
+   <main class="contact-container">
 
-         <div class="social">
-                      <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                      <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                      <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                      <a href="" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                      <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
-               </div>
+    <!-- روابط التواصل -->
+    <ul class="social-list">
+      <div class="social1">
+      <a href="https://www.facebook.com/share/1CBcdG7tSS/" target="_blank"><li class="facebook"><i class="fab fa-facebook"></i>  فـيـسـبـوك - رابط الصفحة الرسمية المباشر</li></a>
+      <a href="https://www.instagram.com/lnea.30?igsh=dDRlOHl5bHY1cG50" target="_blank"><li class="instagram"><i class="fab fa-instagram"></i>  إنـسـتـغـرام - رابط الصفحة الرسمية المباشر</li></a>
+      <li class="whatsapp" onclick="copySpecific(this)" data-copy="0663513450"><i class="fab fa-whatsapp"></i> واتــســاب - لتواصل المباشر معنا 0663513450</li>
       </div>
-  
-   
+       <div class="social2">
+      <li class="tiktok"><i class="fab fa-tiktok"></i> تـيـك تـوك - رابط الصفحة الرسمية المباشر</li>
+      <li class="website"><i class="fas fa-globe"></i>  الموقغ الالكتروني - رابط الموقع الرسمي للرابطة </li>
+      <li class="email" onclick="copySpecific(this)" data-copy="lnea.ouargla30@gmail.com"><i class="fas fa-envelope"></i>  البريد الالكتروني - lnea.ouargla30@gmail.com </li>
+      <a href="https://t.me/+ZCNnAgufqEo3YmE0" target="_blank"><li class="telegram"><i class="fab fa-telegram"></i> تـيـلـيـجـرام - رابط المجموعة الرسمية</li></a>
+      </div>
+    </ul>
+
+    <!-- الفورم -->
+    <section class="support-box">
+      <h2>الدعم الفني</h2>
+      <form class="support-form">
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني الخاص بك" required>
+        <textarea rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
+    <div id="toast">✅ تم النسخ</div>
+
   </main>
+
 
   <footer>
     <p>الرابطة الوطنية للطلبة الجزائريين - المكتب الولائي ورقلة جميع حقوق النشر محفوظة © 2025</p>
   </footer>
 
+  <script src="contact.js"></script>
 </body>
 </html>
