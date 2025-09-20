@@ -12,34 +12,33 @@
 
   
   <header>
-    <div>
-        <img class="logo1" src="imges/الرابطة الوطنية logo.png" alt="Student Organization Logo">
+    <div>  <img class="logo2" src="imges/جامعة ورقلة logo.png">
+        <img class="logo1" src="imges/الرابطة الوطنية logo.png">
       </div>
-    <h1>الرابــطـــة الوطــنيـــة للطلبـــة الجزائـــرييــن</h1>
-    <h2>المـــكتب التـنفيـــذي الولائــــي ورقلــــة</h2>
+    <h1>الرابـــطــــة الوطـــنيـــــة للطلبـــــة الجزائـــــرييـــن</h1>
+    <h2>المـــــكتب التـنفيـــــذي الولائــــــي ورقلــــــة</h2>
     <h3>National Association of Algerian Students – Ouargla Office</h3>
      <div>
-        <img class="logo2" src="imges/جامعة ورقلة logo.png" alt="Student Organization Logo">
       </div>
   </header>
-
-   <nav>
-    <ul>
-      <li onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-    <a class="hideOnMobile" href="index.html">الصفحة الرئسية </a>
-    <a class="hideOnMobile" href="about.html">تعرف علينا</a>
+  
+  <!-- شريط علوي (Navbar) -->
+  <nav class="navbar">
+    <li onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    <a class="hideOnMobile" href="index.html">الصفحة الرئسية</a>
+    <a class="hideOnMobile" href="about.html" target="_blank">تعرف علينا</a>
     <a class="hideOnMobile" href="map.html" target="_blank">خريطة المدينة الجامعية ورقلة</a>
-    <a class="hideOnMobile">" قــريبــــا  "</a>
+    <a class="hideOnMobile" href="#">" قــريبــــا  "</a>
     <a class="hideOnMobile" href="contact.html" target="_blank">تواصل معنا</a>
-      </ul>
-       <ul class="sidebar">
-           <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
-    <a href="index.html">الصفحة الرئسية </a>
-    <a href="about.html">تعرف علينا</a>
-    <a href="map.html" target="_blank">خريطة المدينة الجامعية ورقلة</a>
-    <a>" قــريبــــا  "</a>
-    <a href="contact.html" target="_blank">تواصل معنا</a>
-      </ul>
+  
+  </nav>
+   <nav class="sidebar-bar">
+     <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+    <a class="" href="index.html">الصفحة الرئسية</a>
+    <a class="" href="about.html" target="_blank">تعرف علينا</a>
+    <a class="" href="map.html" target="_blank">خريطة المدينة الجامعية ورقلة</a>
+    <a class="" href="#">" قــريبــــا  "</a>
+    <a class="" href="contact.html" target="_blank">تواصل معنا</a>
   </nav>
 
   <main>
@@ -50,11 +49,12 @@
       
       <iframe id="student-map" 
         src="https://www.google.com/maps/d/u/4/embed?mid=1lQsz5m2LAdmr5CditGjK82s2b5H_D4c&ehbc=2E312F">
+         
       </iframe>
-
       
-
-      <button id="fullscreen-btn" onclick="openFullscreen()">⛶ Fullscreen</button>
+  <div class="map-controls">
+    <button id="fullscreen-btn" onclick="openFullscreen()">⛶ Fullscreen</button>
+    </div>
     </div>
   </main>
 

@@ -24,15 +24,18 @@ btn.addEventListener('click', () => {
     btn.textContent = 'Exit Fullscreen';
   } else {
     document.exitFullscreen();
-    btn.textContent = 'Fullscreen';
+    btn.textContent = ' ⛶ Fullscreen';
   }
 });
 
 document.addEventListener('fullscreenchange', () => {
   if (!document.fullscreenElement) {
-    btn.textContent = 'Fullscreen';
+    btn.textContent = ' ⛶ Fullscreen';
   }
 });
+
+
+
 
 
 
@@ -43,7 +46,7 @@ document.addEventListener('fullscreenchange', () => {
 
 
 function showSidebar() {
-  const sidebar = document.querySelector('.sidebar');
+  const sidebar = document.querySelector('.sidebar-bar');
   sidebar.style.display = 'flex';
   setTimeout(() => {
     sidebar.classList.add('open');
@@ -51,9 +54,12 @@ function showSidebar() {
 }
 
 function hideSidebar() {
-  const sidebar = document.querySelector('.sidebar');
+  const sidebar = document.querySelector('.sidebar-bar');
   sidebar.classList.remove('open');
   setTimeout(() => {
     sidebar.style.display = 'none';
   }, 800); // match the transition duration
 }
+
+
+
