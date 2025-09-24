@@ -141,7 +141,7 @@ html {
   width: 100%;
   padding: 10px 14px;
   margin-top: 40px;
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   border-radius: 8px;
   background: transparent;
@@ -354,6 +354,10 @@ ul.social-list {
   background: rgba(255, 255, 255, 0.4);
   transform: skewX(-25deg);
 }
+
+.social-list li.instagram:hover {
+  transform: translateY(-3px) scale(1.02);
+}
 .social-list li.instagram:hover::after {
   left: 130%;
   transition: left 0.8s ease-in-out;
@@ -376,6 +380,9 @@ ul.social-list {
   height: 100%;
   background: rgba(255, 255, 255, 0.4);
   transform: skewX(-25deg);
+}
+.social-list li.whatsapp:hover {
+  transform: translateY(-3px) scale(1.02);
 }
 .social-list li.whatsapp:hover::after {
   left: 130%;
@@ -400,6 +407,10 @@ ul.social-list {
   background: rgba(255, 255, 255, 0.4);
   transform: skewX(-25deg);
 }
+.social-list li.tiktok:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
 .social-list li.tiktok:hover::after {
   left: 130%;
   transition: left 0.8s ease-in-out;
@@ -423,6 +434,9 @@ ul.social-list {
   background: rgba(255, 255, 255, 0.4);
   transform: skewX(-25deg);
 }
+.social-list li.website:hover {
+  transform: translateY(-3px) scale(1.02);
+}
 .social-list li.website:hover::after {
   left: 130%;
   transition: left 0.8s ease-in-out;
@@ -435,6 +449,9 @@ ul.social-list {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(255, 95, 109, 0.4);
+}
+.social-list li.email:hover {
+  transform: translateY(-3px) scale(1.02);
 }
 .social-list li.email::after {
   content: "";
@@ -458,6 +475,9 @@ ul.social-list {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 136, 204, 0.4);
+}
+.social-list li.telegram:hover {
+  transform: translateY(-3px) scale(1.02);
 }
 .social-list li.telegram::after {
   content: "";
@@ -723,7 +743,7 @@ header {
   width: 100%;
   padding: 10px 14px;
   margin-top: 40px;
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   border-radius: 8px;
   background: transparent;
@@ -943,7 +963,7 @@ header {
   width: 100%;
   padding: 10px 14px;
   margin-top: 30px;
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   border-radius: 8px;
   background: transparent;
