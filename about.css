@@ -840,14 +840,14 @@ img.img.show {
     }
 
       .points {
-    margin: -20px 0px 30px 0px;
+     margin: -20px 0px 30px 0px;
     padding: 0 15px;
     color: #333;
-    text-align: justify;
     font-size: 14px;
     font-weight: 700;
     word-spacing: 0px;
-    width: 350px;
+     width: 350px;
+     text-align: justify;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -861,6 +861,7 @@ img.img.show {
     font-weight: 700;
     word-spacing: 0px;
      width: 350px;
+     text-align: justify;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -870,13 +871,12 @@ img.img.show {
        margin: -20px 0px 30px 0px;
     padding: 0 15px;
     color: #333;
-    text-align: justify;
     font-size: 14px;
     font-weight: 700;
     word-spacing: 0px;
+     width: 350px;
+     text-align: justify;
     opacity: 0;
-    width: 350px;
-    word-wrap: break-word;  
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
      }
