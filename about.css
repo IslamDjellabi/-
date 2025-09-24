@@ -225,6 +225,7 @@ img.img.show {
     font-weight: 700;
     word-spacing: 1px;
     width: 2000px;
+    line-height: 35px;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -236,6 +237,7 @@ img.img.show {
     color: #333;
     text-align: justify;
     font-size: 19px;
+     line-height: 35px;
     font-weight: 700;
     word-spacing: 1px;
     width: 2000px;
@@ -250,6 +252,7 @@ img.img.show {
     color: #333;
     text-align: justify;
     font-size: 19px;
+     line-height: 35px;
     font-weight: 700;
     word-spacing: 1px;
     width: 2000px;
@@ -840,12 +843,13 @@ img.img.show {
     }
 
       .points {
-     margin: -20px -5px 30px 0px;
+     margin: -20px -15px 30px 0px;
     padding: 0 15px;
     color: #333;
     font-size: 14px;
     font-weight: 700;
     word-spacing: 0px;
+     line-height: 28px;
      width: 350px;
      text-align: justify;
     opacity: 0;
@@ -854,12 +858,13 @@ img.img.show {
      }
 
      .points1 {
-    margin: -20px -5px 30px 0px;
+    margin: -20px -15px 30px 0px;
     padding: 0 15px;
     color: #333;
     font-size: 14px;
     font-weight: 700;
     word-spacing: 0px;
+     line-height: 28px;
      width: 350px;
      text-align: justify;
     opacity: 0;
@@ -868,12 +873,13 @@ img.img.show {
      }
      
      .points2 {
-       margin: -20px -5px 30px 0px;
+       margin: -20px -15px 30px 0px;
     padding: 0 15px;
     color: #333;
     font-size: 14px;
     font-weight: 700;
     word-spacing: 0px;
+     line-height: 28px;
      width: 350px;
      text-align: justify;
     opacity: 0;
