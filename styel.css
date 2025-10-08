@@ -127,6 +127,7 @@ html {
   background-color: #0a3d62;
   border-radius: 20px;
   transition: all 0.5s ease;
+  padding: 3px 0 3px 0;
 }
 
 .side-item .img2 {
@@ -137,6 +138,7 @@ html {
   background-color: #0a3d62;
   border-radius: 20px;
   transition: all 0.5s ease;
+  padding: 3px 0 3px 0;
 }
 
 .side-item .img3 {
@@ -147,6 +149,7 @@ html {
   background-color: #0a3d62;
   border-radius: 20px;
   transition: all 0.5s ease;
+  padding: 3px 0 3px 0;
 }
 
 .side-item .img4 {
@@ -157,6 +160,7 @@ html {
   background-color: #0a3d62;
   border-radius: 20px;
   transition: all 0.5s ease;
+  padding: 3px 0 3px 0;
 }
 
 .side-item .img5 {
@@ -167,6 +171,7 @@ html {
   background-color: #0a3d62;
   border-radius: 20px;
   transition: all 0.5s ease;
+  padding: 3px 0 3px 0;
 }
 
 .side-item .fa-solid {
@@ -328,7 +333,7 @@ a.link {
   width: 100%;
   padding: 10px 14px;
   margin-top: 40px;
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   border-radius: 8px;
   background: transparent;

@@ -208,7 +208,7 @@ img.img.show {
       padding: 0 15px;
       color: #333;
       text-align: justify;
-      font-size: 17px;
+      font-size: 20px;
       font-weight: 700;
       word-spacing: 1px;
       opacity: 0;
@@ -221,23 +221,23 @@ img.img.show {
     padding: 0 15px;
     color: #333;
     text-align: justify;
-    font-size: 19px;
+    font-size: 21px;
     font-weight: 700;
     word-spacing: 1px;
     width: 2000px;
-    line-height: 35px;
+    line-height: 37px;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
      }
 
      .points1 {
-    margin: -30px 190px 30px 0px;
+    margin: -30px 120px 30px 0px;
     padding: 0 15px;
     color: #333;
     text-align: justify;
-    font-size: 19px;
-     line-height: 35px;
+    font-size: 21px;
+     line-height: 37px;
     font-weight: 700;
     word-spacing: 1px;
     width: 2000px;
@@ -247,12 +247,12 @@ img.img.show {
      }
      
      .points2 {
-       margin: -30px 190px 30px 0px;
+       margin: -30px 180px 30px 0px;
     padding: 0 15px;
     color: #333;
     text-align: justify;
-    font-size: 19px;
-     line-height: 35px;
+    font-size: 21px;
+     line-height: 37px;
     font-weight: 700;
     word-spacing: 1px;
     width: 2000px;

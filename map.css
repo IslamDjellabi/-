@@ -145,7 +145,7 @@ main {
   width: 100%;
   padding: 10px 14px;
   margin-top: 40px;
-  color: #ffffff;
+    color: #000000;
   text-decoration: none;
   border-radius: 8px;
   background: transparent;
@@ -395,7 +395,7 @@ header {
   width: 100%;
   padding: 10px 14px;
   margin-top: 40px;
-  color: #ffffff;
+   color: #000000;
   text-decoration: none;
   border-radius: 8px;
   background: transparent;
@@ -589,7 +589,7 @@ header {
   width: 100%;
   padding: 10px 14px;
   margin-top: 30px;
-  color: #ffffff;
+    color: #000000;
   text-decoration: none;
   border-radius: 8px;
   background: transparent;
