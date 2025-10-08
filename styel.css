@@ -128,6 +128,8 @@ html {
   border-radius: 20px;
   transition: all 0.5s ease;
   padding: 3px 0 3px 0;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .side-item .img2 {
