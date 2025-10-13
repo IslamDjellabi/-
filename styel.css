@@ -87,7 +87,6 @@ html {
   border-radius: 50px;
 }
 
-/* Layout */
 .page {
   display: grid;
   grid-template-columns: 260px 1fr; /* أول عمود aside ثم المحتوى */
@@ -95,7 +94,6 @@ html {
   padding: 20px;
 }
 
-/* محتوى */
 .content {
   background: white;
   padding: 20px;
@@ -192,7 +190,7 @@ html {
   text-align: center;
 }
 
- .content img {
+ .content img.home {
   width: 1000px;
   height: 420px;
   box-shadow: 1px 1px 10px black;
@@ -237,6 +235,7 @@ a.link {
 }
 
 .slide img {
+  box-shadow: 0px ;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -396,7 +395,7 @@ a.link {
   border-right: #000000 3px solid;
 }
 
-.content img {
+.content img.home {
   width: 480px;
         height: 221px;
   box-shadow: 1px 1px 10px black;
@@ -728,7 +727,7 @@ footer {
   border-right: #000000 3px solid;
 }
 
-.content img {
+.content img.home {
  width: 210px;
   height: 100px;
   box-shadow: 1px 1px 10px black;
@@ -752,9 +751,9 @@ footer {
   background: rgba(0,0,0,0.5);
   color: #fff;
   border: none;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
-  font-size: 6px;
+  font-size: 7px;
   border-radius: 50%;
 }
 
@@ -764,15 +763,15 @@ footer {
 /* Dots */
 .carousel-dots {
   position: absolute;
-  bottom: 0px;
+  bottom: -5px;
   width: 100%;
   text-align: center;
 }
 
 .carousel-dots button {
-  width: 7px;
-    height: 7px;
-    margin: 0 4px;
+  width: 6px;
+    height: 6px;
+    margin: 0 4px ;
     border-radius: 50%;
     background: rgba(255,255,255,0.6);
     cursor: pointer;
@@ -804,30 +803,35 @@ footer {
   font-size: 8px;
   float: right;
   padding: 3px 14px;
+  margin-bottom: 15px;
 }
 
 .side-item .img2 {
    font-size: 8px;
   float: right;
   padding: 3px 8px;
+   margin-bottom: 15px;
 }
 
 .side-item .img3 {
   font-size: 8px;
   float: right;
   padding: 3px 11px;
+   margin-bottom: 15px;
 }
 
 .side-item .img4 {
   font-size: 8px;
   float: right;
   padding: 3px 12px;
+   margin-bottom: 15px;
 }
 
 .side-item .img5 {
   font-size: 8px;
   float: right;
   padding: 3px 32px;
+   margin-bottom: 15px;
 }
 
 .page {
