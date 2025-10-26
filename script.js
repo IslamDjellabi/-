@@ -78,7 +78,7 @@ dots.forEach((dot, i) => {
 setInterval(() => {
   index++;
   updateSlide();
-}, 5000);
+}, 8000);
 
 // Resize handling
 window.addEventListener("resize", () => {

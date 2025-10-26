@@ -58,17 +58,23 @@
     </ul>
 
     <!-- الفورم -->
-    <section class="support-box">
-      <h2>الدعم الفني</h2>
-      <form class="support-form">
-        <input type="text" placeholder="الاسم" required>
-        <input type="email" placeholder="البريد الإلكتروني الخاص بك" required>
-        <textarea rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
-        <button type="submit">إرسال</button>
-      </form>
-    </section>
-    <div id="toast">✅ تم النسخ</div>
+   <section class="support-box">
+  <h2>الدعم الفني</h2>
 
+  <form class="support-form" id="supportForm" action="https://formsubmit.co/zakaria.djellabi05@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New message from your website!">
+    <input type="hidden" name="_template" value="box">
+
+    <input type="text" name="name" placeholder="الاسم" required>
+    <input type="email" name="email" placeholder="البريد الإلكتروني الخاص بك" required>
+    <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+    <button type="submit">إرسال</button>
+  </form>
+
+  <p id="successMessage" class="success-message">✅ تم إرسال رسالتك بنجاح! شكرًا لتواصلك معنا.</p>
+</section>
+    <div id="toast">✅ تم النسخ</div>
   </main>
 
 

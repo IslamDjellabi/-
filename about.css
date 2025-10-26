@@ -202,64 +202,148 @@ img.img.show {
       opacity: 1;
       transform: translateY(0);
  }
- 
-    p {
-      margin: 0px auto 30px;
-      padding: 0 15px;
-      color: #333;
-      text-align: justify;
-      font-size: 20px;
-      font-weight: 700;
-      word-spacing: 1px;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
+ p {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(216, 216, 216, 0.98));
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.6);
+  color: #111;
+  line-height: 1.7;
+  font-weight: 600;
+  font-size: 19px;
+  margin: 14px auto 25px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s ease;
+ }
+    .points{
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(216, 216, 216, 0.98));
+  padding: 18px;
+  padding-top: 0px;
+  padding-bottom: 25px;
+  border-radius: 12px;
+  border: 2px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.6);
+  color: #111;
+  line-height: 2;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 14px auto 25px;
+  max-width: 700px;
+  box-sizing: border-box;
+  overflow: hidden;
+   display: flex;
+  flex-direction: column;
+  align-items: center;   /* center horizontally */
+  justify-content: center; /* center vertically if container height is larger */
+  text-align: justify; 
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
 
-      .points {
-    margin: -30px 260px 30px 0px;
-    padding: 0 15px;
-    color: #333;
-    text-align: justify;
-    font-size: 21px;
-    font-weight: 700;
-    word-spacing: 1px;
-    width: 2000px;
-    line-height: 37px;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-     }
+.points1 {
+   position: relative;
+ background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(216, 216, 216, 0.98));
+  padding: 18px;
+  padding-top: 0px;
+  padding-bottom: 25px;
+  border-radius: 12px;
+  border: 2px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.6);
+  color: #111;
+  line-height: 2;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 14px auto 25px;
+  max-width: 900px;
+  box-sizing: border-box;
+  overflow: hidden;
+   display: flex;
+  flex-direction: column;
+  align-items: center;   /* center horizontally */
+  justify-content: center; /* center vertically if container height is larger */
+  text-align: justify; 
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
 
-     .points1 {
-    margin: -30px 150px 30px 0px;
-    padding: 0 15px;
-    color: #333;
-    text-align: justify;
-    font-size: 21px;
-     line-height: 37px;
-    font-weight: 700;
-    word-spacing: 1px;
-    width: 2000px;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-     }
-     
-     .points2 {
-       margin: -30px 200px 30px 0px;
-    padding: 0 15px;
-    color: #333;
-    text-align: justify;
-    font-size: 21px;
-     line-height: 37px;
-    font-weight: 700;
-    word-spacing: 1px;
-    width: 2000px;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-     }
+.points2 {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(216, 216, 216, 0.98));
+   padding: 18px;
+  padding-top: 0px;
+  padding-bottom: 25px;
+  border-radius: 12px;
+  border: 2px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.6);
+  color: #111;
+  line-height: 2;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 14px auto 25px;
+  max-width: 800px;
+  box-sizing: border-box;
+  overflow: hidden;
+   display: flex;
+  flex-direction: column;
+  align-items: center;   /* center horizontally */
+  justify-content: center; /* center vertically if container height is larger */
+  text-align: justify; 
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+/* Show state */
+p.show, .points.show, .points1.show, .points2.show { opacity: 1; transform: translateY(0); }
+
+/* Decorative corner — top-right (RTL) */
+p::after,
+.points::after,
+.points1::after,
+.points2::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  right: 12px;
+  top: 12px;
+  border-top: 6px solid rgba(0,0,0,0.6);
+  border-right: 6px solid rgba(0,0,0,0.6);
+  border-radius: 6px;
+  opacity: 0.95;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+/* Decorative corner — bottom-left (mirror) */
+p::before,
+.points::before,
+.points1::before,
+.points2::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 12px;
+  bottom: 12px;
+  border-bottom: 6px solid rgba(0,0,0,0.6);
+  border-left: 6px solid rgba(0,0,0,0.6);
+  border-radius: 6px;
+  opacity: 0.95;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
 
      p.show, .points.show, .points1.show, .points2.show {
      opacity: 1;

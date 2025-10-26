@@ -13,12 +13,16 @@ body {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+    direction: rtl !important;
+  unicode-bidi: plaintext !important;
 }
 
 html {
   height: auto;
   min-height: 100%;
-   overflow-x: hidden;
+  overflow-x: hidden;
+  direction: rtl !important;
+  unicode-bidi: plaintext !important;
 }
 
 * {
