@@ -576,10 +576,10 @@ header {
 }
 
 h2.vid {
-      margin: 40px auto 10px;
+      margin: 20px auto 10px;
       color: #222;
       text-align: center;
-      font-size: 25px;
+      font-size: 18px;
       font-weight: 800;
       word-spacing: 5px;
       text-shadow: 3px 3px 5px rgba(133, 133, 133, 0.7);
@@ -590,10 +590,10 @@ h2.vid {
     } 
 
     h2.vid1 {
-      margin: 40px auto 30px;
+      margin: 20px auto 10px;
       color: #222;
       text-align: center;
-      font-size: 25px;
+      font-size: 18px;
       font-weight: 800;
       word-spacing: 5px;
       text-shadow: 3px 3px 5px rgba(133, 133, 133, 0.7);
@@ -621,54 +621,60 @@ img.img.show {
  
     p {
       margin: 0px auto 30px;
-      padding: 0 15px;
+      padding: 20px 15px;
       color: #333;
       text-align: justify;
       font-size: 14px;
       font-weight: 700;
-      word-spacing: 1px;
+      word-spacing: 0px;
       opacity: 0;
       transform: translateY(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
 
       .points {
-    margin: -30px 90px 30px 0px;
+     margin: 20px 40px 0px 0px;
     padding: 0 15px;
+    padding-bottom: 20px;
     color: #333;
-    text-align: justify;
     font-size: 14px;
     font-weight: 700;
-    word-spacing: 1px;
-    width: 2000px;
+    word-spacing: 0px;
+     line-height: 28px;
+     width: 600px;
+     text-align: justify;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
      }
 
      .points1 {
-    margin: -30px 55px 30px 0px;
+    margin: 20px 40px 0px 0px;
     padding: 0 15px;
+    padding-bottom: 20px;
     color: #333;
-    text-align: justify;
     font-size: 14px;
     font-weight: 700;
-    word-spacing: 1px;
-    width: 2000px;
+    word-spacing: 0px;
+     line-height: 28px;
+     width: 600px;
+     text-align: justify;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
      }
      
      .points2 {
-       margin: -30px 80px 30px 0px;
+       margin: 20px 40px 0px 0px;
     padding: 0 15px;
+    padding-bottom: 20px;
     color: #333;
-    text-align: justify;
     font-size: 14px;
     font-weight: 700;
-    word-spacing: 1px;
-    width: 2000px;
+    word-spacing: 0px;
+     line-height: 28px;
+     width: 600px;
+     text-align: justify;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -681,7 +687,7 @@ img.img.show {
 
     video {
       width: 100%;
-      height: 60vh;
+      height: 50vh;
       margin: 20px auto;
       display: block;
     }
@@ -694,9 +700,48 @@ img.img.show {
      }
 
     .all {
-      margin: 40px auto;
-      width: 600px;
+      margin: 30px auto;
+      width: 700px;
     }
+
+    
+
+    p::after,
+.points::after,
+.points1::after,
+.points2::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 6px;
+  top: 10px;
+  border-top: 4px solid rgba(0,0,0,0.6);
+  border-right: 4px solid rgba(0,0,0,0.6);
+  border-radius: 6px;
+  opacity: 0.95;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+/* Decorative corner — bottom-left (mirror) */
+p::before,
+.points::before,
+.points1::before,
+.points2::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 6px;
+  bottom: 10px;
+  border-bottom: 4px solid rgba(0,0,0,0.6);
+  border-left: 4px solid rgba(0,0,0,0.6);
+  border-radius: 6px;
+  opacity: 0.95;
+  pointer-events: none;
+  transform: translateZ(0);
+}
 
     footer {
      margin: 0;
