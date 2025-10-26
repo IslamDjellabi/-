@@ -580,20 +580,6 @@ ul.social-list {
   transform: translateY(6px);
 }
 
-/* عند الإظهار */
-#successMessage.visible {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* رسالة خطأ */
-#successMessage.error {
-  background: #ffecec;
-  color: #8a1f1f;
-  border-color: rgba(138,31,31,0.12);
-}
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
