@@ -929,7 +929,7 @@ img.img.show {
  
     p {
       margin: 0px auto 30px;
-      padding: 0 15px;
+      padding: 20px 15px;
       color: #333;
       text-align: justify;
       font-size: 14px;
@@ -941,8 +941,9 @@ img.img.show {
     }
 
       .points {
-     margin: -20px -15px 30px 0px;
+     margin: 0px -15px 30px 0px;
     padding: 0 15px;
+    padding-bottom: 20px;
     color: #333;
     font-size: 14px;
     font-weight: 700;
@@ -956,8 +957,9 @@ img.img.show {
      }
 
      .points1 {
-    margin: -20px -15px 30px 0px;
+    margin: 0px -15px 30px 0px;
     padding: 0 15px;
+    padding-bottom: 20px;
     color: #333;
     font-size: 14px;
     font-weight: 700;
@@ -971,8 +973,9 @@ img.img.show {
      }
      
      .points2 {
-       margin: -20px -15px 30px 0px;
+       margin: 0px -15px 30px 0px;
     padding: 0 15px;
+    padding-bottom: 20px;
     color: #333;
     font-size: 14px;
     font-weight: 700;
@@ -1023,6 +1026,43 @@ img.img.show {
       font-size: 9px;
       font-weight: 600;
     }
+
+    p::after,
+.points::after,
+.points1::after,
+.points2::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 6px;
+  top: 10px;
+  border-top: 4px solid rgba(0,0,0,0.6);
+  border-right: 4px solid rgba(0,0,0,0.6);
+  border-radius: 6px;
+  opacity: 0.95;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+/* Decorative corner — bottom-left (mirror) */
+p::before,
+.points::before,
+.points1::before,
+.points2::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 6px;
+  bottom: 10px;
+  border-bottom: 4px solid rgba(0,0,0,0.6);
+  border-left: 4px solid rgba(0,0,0,0.6);
+  border-radius: 6px;
+  opacity: 0.95;
+  pointer-events: none;
+  transform: translateZ(0);
+}
 }
 
 
