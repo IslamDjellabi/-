@@ -108,6 +108,7 @@ html {
   padding: 20px;
   order: 2;
   border-right: #000000 3px solid;
+  height: 1300px;
 }
 
 /* Sidebar */
@@ -125,7 +126,7 @@ html {
 .side-item img {
   width: 100%;
   display: block;
-  margin-top: 80px;
+  margin-top: 27px;
 }
 .side-item .img1 {
   list-style-type: none;
@@ -365,17 +366,18 @@ a.link {
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 1200px;
+  gap: 50px;
+  max-width: 1400px;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 30px ;
+  background-color: #fff;
 }
 
 /* كل منشور */
 .fb-post {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -384,7 +386,7 @@ a.link {
 
 .fb-post:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* صورة المنشور */
@@ -397,19 +399,20 @@ a.link {
 /* محتوى النص والرابط */
 .fb-content {
   padding: 10px;
+  padding-top: 0px;
   flex: 1;
 }
 
 .fb-text {
-  font-size: 1rem;
   color: #1c1e21;
   line-height: 1.7;
   margin-bottom: 12px;
+  font-size: 17px;
 }
 
 .content p {
     margin: 0px 10px 10px 10px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
     word-spacing: 1px;
@@ -435,7 +438,7 @@ a.link {
 
 h1.titel {
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 0px;
     font-weight: 800;
     text-align: center;
   }
@@ -456,6 +459,16 @@ h1.titel {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
    .hideOnMobile{
@@ -472,6 +485,7 @@ h1.titel {
   width: 100%;
   order: 2;
   border-right: #000000 3px solid;
+  height: 930px;
 }
 
 .content img.home {
@@ -530,7 +544,7 @@ h1.titel {
   flex-direction: column;
   gap: 20px;
   order: 1;
-  margin-top: 28px;
+  margin-top: 0px;
 }
 .side-item {
   overflow: hidden;
@@ -544,7 +558,7 @@ h1.titel {
 .side-item img {
   width: 90%;
   display: block;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .side-item .img1 {
@@ -624,7 +638,7 @@ header {
     }
 
     .content h2 {
-  font-size: 17px;
+  font-size: 30px;
    margin-top: -4px;
   font-weight: 700;
   text-align: center;
@@ -746,17 +760,18 @@ header {
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 50px;
   max-width: 1200px;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 30px ;
+  background-color: #fff;
 }
 
 /* كل منشور */
 .fb-post {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -782,7 +797,6 @@ header {
 }
 
 .fb-text {
-  font-size: 1rem;
   color: #1c1e21;
   line-height: 1.7;
   margin-bottom: 12px;
@@ -790,7 +804,7 @@ header {
 
 .content p {
     margin: 0px 10px 10px 10px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.5;
     word-spacing: 1px;
@@ -813,6 +827,13 @@ header {
 .fb-link:hover {
   background: #145dbf;
 }
+
+h1.titel {
+    font-size: 30px;
+    margin: 0px;
+    font-weight: 800;
+    text-align: center;
+  }
 
 
 footer {
@@ -877,6 +898,7 @@ footer {
   width: 100%;
   order: 2;
   border-right: #000000 3px solid;
+  height: 610px;
 }
 
 .content img.home {
@@ -935,7 +957,7 @@ footer {
   flex-direction: column;
   gap: 20px;
   order: 1;
-  margin-top: 28px;
+  margin-top: 10px;
 }
 .side-item {
   overflow: hidden;
@@ -950,7 +972,7 @@ footer {
 .side-item img {
   width: 90%;
   display: block;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .side-item .img1 {
@@ -1153,8 +1175,8 @@ header {
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-  max-width: 1200px;
+  gap: 40px;
+  max-width: 400px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -1163,7 +1185,6 @@ header {
 .fb-post {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1178,7 +1199,7 @@ header {
 /* صورة المنشور */
 .fb-image {
   width: 100%;
-  height: 110px;
+  height: 210px;
   object-fit: cover;
 }
 
@@ -1189,24 +1210,21 @@ header {
 }
 
 .fb-text {
-  font-size: 1rem;
   color: #1c1e21;
-  line-height: 1.7;
   margin-bottom: 12px;
-}
-
-.content p {
-    margin: 0px 10px 10px 10px;
-    font-size: 10px;
+   margin: 0px 10px 10px 10px;
+    font-size: 14px;
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 1.7;
     word-spacing: 1px;
     text-align: right;
 }
 
+
+
 h1.titel {
     font-size: 17px;
-    margin-top: 20px;
+    margin: 0px;
     margin-bottom: -20px;
     font-weight: 700;
     text-align: center;
