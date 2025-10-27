@@ -87,7 +87,7 @@ formInputs.forEach(input => {
   input.addEventListener("focus", () => {
     // نرفع القسم للأعلى لتفادي تغطيته بلوحة المفاتيح
     supportSection.style.transition = "transform 0.3s ease";
-    supportSection.style.transform = "translateY(-100px)";
+    supportSection.style.transform = "translateY(-150px)";
   });
 
   input.addEventListener("blur", () => {
