@@ -78,11 +78,21 @@ form.addEventListener("submit", function(e) {
 });
 });
 
-/* 🔹 خاصية رفع النموذج عند ظهور لوحة المفاتيح على الهاتف */
+/* 🔹 رفع النموذج عند ظهور لوحة المفاتيح في الهاتف */
+const supportSection = document.querySelector(".support-section");
+
+// إضافة انتقال ناعم للحركة
+supportSection.style.transition = "all 0.3s ease";
+
 window.addEventListener("resize", () => {
-  if (window.innerHeight < 500) {
-    document.querySelector(".support-section").style.justifyContent = "flex-start";
+  // نقيس فرق الارتفاع لتحديد إن كانت لوحة المفاتيح مفتوحة
+  if (window.innerHeight < window.outerHeight - 150) {
+    // رفع النموذج للأعلى
+    supportSection.style.justifyContent = "flex-start";
+    supportSection.style.paddingTop = "40px"; // مساحة بسيطة من الأعلى
   } else {
-    document.querySelector(".support-section").style.justifyContent = "center";
+    // إعادة الوضع الطبيعي عند إغلاق الكيبورد
+    supportSection.style.justifyContent = "center";
+    supportSection.style.paddingTop = "0";
   }
 });
