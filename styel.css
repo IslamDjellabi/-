@@ -366,7 +366,7 @@ a.link {
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  gap: 40px;
   max-width: 1400px;
   margin: 40px auto;
   padding: 30px ;

@@ -352,9 +352,10 @@ p::before,
 
     video {
       width: 100%;
-      height: 100vh;
+      height: 82.9vh;
       margin: 20px auto;
       display: block;
+      box-shadow: 0 4px 12px rgba(0,0,0,1.2);
     }
 
      img.img {
@@ -687,9 +688,10 @@ img.img.show {
 
     video {
       width: 100%;
-      height: 50vh;
+      height: 38.4vh;
       margin: 20px auto;
       display: block;
+      box-shadow: 0 4px 12px rgba(0,0,0,1.2);
     }
 
      img.img {
@@ -1040,9 +1042,10 @@ img.img.show {
 
     video {
       width: 100%;
-      height: 50vh;
+      height: 22vh;
       margin: 20px auto;
       display: block;
+      box-shadow: 0 4px 12px rgba(0,0,0,1.2);
     }
 
      img.img {
