@@ -78,21 +78,31 @@ form.addEventListener("submit", function(e) {
 });
 });
 
-/* 🔹 رفع النموذج عند ظهور لوحة المفاتيح في الهاتف */
+// استهداف قسم الدعم والفورم
 const supportSection = document.querySelector(".support-section");
+const formInputs = document.querySelectorAll("#support-form input, #support-form textarea");
 
-// إضافة انتقال ناعم للحركة
-supportSection.style.transition = "all 0.3s ease";
+// عندما يضغط المستخدم على حقل الكتابة
+formInputs.forEach(input => {
+  input.addEventListener("focus", () => {
+    // نرفع القسم للأعلى لتفادي تغطيته بلوحة المفاتيح
+    supportSection.style.transition = "transform 0.3s ease";
+    supportSection.style.transform = "translateY(-100px)";
+  });
+
+  input.addEventListener("blur", () => {
+    // عندما يغادر المستخدم الحقل، نعيد الوضع الطبيعي
+    supportSection.style.transform = "translateY(0)";
+  });
+});
+
+
+
 
 window.addEventListener("resize", () => {
-  // نقيس فرق الارتفاع لتحديد إن كانت لوحة المفاتيح مفتوحة
-  if (window.innerHeight < window.outerHeight - 150) {
-    // رفع النموذج للأعلى
+  if (window.innerHeight < 500) {
     supportSection.style.justifyContent = "flex-start";
-    supportSection.style.paddingTop = "40px"; // مساحة بسيطة من الأعلى
   } else {
-    // إعادة الوضع الطبيعي عند إغلاق الكيبورد
     supportSection.style.justifyContent = "center";
-    supportSection.style.paddingTop = "0";
   }
 });
