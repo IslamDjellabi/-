@@ -494,51 +494,77 @@ ul.social-list {
   transition: left 0.8s ease-in-out;
 }
 
-.support-box {
-  background: linear-gradient(135deg, #f0f4ff, #e6f0ff);
-  border: 1px solid #cdd9f5;
-  padding: 25px;
+.support-section {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#support-form {
+   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  margin-top: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 40px 35px;
+  width: 95%;
+  max-width: 600px;  /* ← زِد القيمة لتكبير العرض */
+  text-align: center;
 }
 
+#support-form h2 {
+  color: #2f7cc4;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 28px;
+}
 
-.support-form input,
-.support-form textarea {
+#support-form input,
+#support-form textarea {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 17px;
-  background: #fff;
-  transition: border 0.3s, box-shadow 0.3s;
-}
-
-.support-form input:focus,
-.support-form textarea:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
   outline: none;
+  font-size: 15px;
+  box-sizing: border-box;
 }
 
-.support-form button {
+#support-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+#support-form button {
   width: 100%;
-  padding: 12px;
-  background: linear-gradient(135deg, #007bff, #0056b3);
+  background: #2f7cc4;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
+  padding: 12px;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  transition: background 0.3s;
 }
 
-.support-form button:hover {
-  background: linear-gradient(135deg, #0056b3, #003d80);
-  transform: translateY(-2px);
+#support-form button:hover {
+  background: #1d4f7c;
+}
+
+#status-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#status-message.success {
+  color: green;
+}
+
+#status-message.error {
+  color: red;
+}
+
+.hidden {
+  display: none;
 }
 
 #toast {
@@ -564,26 +590,6 @@ ul.social-list {
   bottom: 50px;
 }
 
-#successMessage {
-  display: none;
-  background: #e6ffed;
-  color: #0a6b2b;
-  border: 1px solid rgba(10,107,43,0.12);
-  padding: 10px 14px;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-  text-align: center;
-  font-weight: 700;
-  margin-top: 12px;
-  transition: opacity .35s ease, transform .35s ease;
-  opacity: 0;
-  transform: translateY(6px);
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 
  footer {
     padding: 3px;

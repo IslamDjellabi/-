@@ -57,16 +57,20 @@
       </div>
     </ul>
 
-    <!-- الفورم -->
-   <section class="support-box">
-  <h2>الدعم الفني</h2>
+   <section class="support-section">
+  <form id="support-form">
+    <h2>الدعم الفني</h2>
 
-  <form class="support-form" id="supportForm" action="https://formsubmit.co/islam59k@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="الاسم" required>
-    <input type="email" name="email" placeholder="البريد الإلكتروني الخاص بك" required>
-    <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+    <input type="text" id="name" name="name" placeholder="الاسم" required>
+    <input type="email" id="email" name="email" placeholder="البريد الإلكتروني الخاص بك" required>
+    <textarea id="message" name="message" placeholder="اكتب رسالتك معنا..." required></textarea>
+
     <button type="submit">إرسال</button>
+
+    <p id="status-message" class="hidden"></p>
   </form>
+</section>
+
 
     <div id="toast">✅ تم النسخ</div>
   </main>
@@ -75,6 +79,7 @@
     <p>الرابطة الوطنية للطلبة الجزائريين - المكتب الولائي ورقلة جميع حقوق النشر محفوظة © 2025</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="contact.js"></script>
 </body>
 </html>
